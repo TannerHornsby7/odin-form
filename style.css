@@ -1,8 +1,11 @@
-@import url(assets/Norse-Bold.otf);
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(assets/Norse-Bold.otf);
+}
 
 :root{
     font-size: 1em;
-    font-family: Norse-Bold, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -14,12 +17,99 @@ body {
 }
 
 .splash {
-    flex: auto;
+    flex: 1 1 40%;
     background: url(assets/splash.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+img[src="assets/odin-lined.png"] {
+    height: 125px;
+    width: auto;
+}
+
+.logo {
+    margin-top: 250px;
+    font-family: Norse-Bold, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    height: 150px;
+}
+
+.credits a {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.credits {
+    padding: 15px;
+    font-size: small;
 }
 
 .content {
-    flex: 0 0 60%;
-    background-color: antiquewhite;
+    flex: 1 1 60%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.quote {
+    margin-top: 50px;
+    flex: 1 1 30%;
+    padding: 50px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+form {
+    flex: 1 1 70%;
+    
+}
+fieldset {
+    box-sizing: border-box;
+    border: none;
+}
+
+form fieldset:first-child {
+    padding: 50px;
+    background-color: white;
+    box-shadow: 2px 4px 10px 1px lightgray;
+    height: 350px;
+}
+legend {
+    padding-top: 50px;
+    font-weight: 300;
+    font-size: x-large;
+}
+input, label {
+    display:block;
+}
+.formc {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.leftc,
+.rightc {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 10px;
+}
+

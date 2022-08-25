@@ -9,7 +9,10 @@
 </head>
 <body>
     <div class="splash">
-        <div class="logo"><img src="assets/odin-lined.png" alt="odin logo"></div>
+        <div class="logo">
+            <img src="assets/odin-lined.png" alt="odin logo">
+            <h2 class="odin">ODIN</h2>
+        </div>
         <div class="credits">Photo by <a href="https://unsplash.com/@cristofer">
             Cristofer Maximilian</a> on <a href="unsplash.com">Unsplash</a></div>
     </div>
@@ -20,25 +23,32 @@
                 you need something like this in your life to
                 help you realize your deepest dreams. Sign up <em>now</em>
                 to get started.
-
+            </p>
+            <p>
                 You <em>know</em> you want to.
             </p>
         </div>
         <form action="" method="post">
             <fieldset>
                 <legend>Lets Do This!</legend>
-                <input type="text" id="first_name" name="first_name" placeholder="First Name" min="4" max="20">
-                <label for="first_name">First Name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Last Name" min="4" max="20">
-                <label for="last_name">Last Name</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com">
-                <label for="email">Email</label>
-                <input type="text" id="pn" name="pn" placeholder="(888)-888-8888" pattern="[789][0-9]{9}">
-                <label for="pn">Phone Number</label>
-                <input type="password" id="first_pw" name="first_pw" placeholder="Enter Password" min="6" max="20">
-                <label for="first_pw">Password</label>
-                <input type="password" id="last_pw" name="last_pw" placeholder="Re-Enter Password" min="6" max="20">
-                <label for="last_pw">Confirm Password</label>
+                <div class="formc">
+                    <div class="leftc">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" min="4" max="20">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com">
+                        <label for="first_pw">Password</label>
+                        <input type="password" id="first_pw" name="first_pw" placeholder="Enter Password" min="6" max="20">
+                    </div>
+                    <div class="rightc">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name" min="4" max="20">
+                        <label for="pn">Phone Number</label>
+                        <input type="text" id="pn" name="pn" placeholder="(888)-888-8888" pattern="[789][0-9]{9}">
+                        <label for="last_pw">Confirm Password</label>
+                        <input type="password" id="last_pw" name="last_pw" placeholder="Re-Enter Password" min="6" max="20">
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
                 <button>Create Account</button>
